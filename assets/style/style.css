@@ -1,6 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 
+/*----------------------General--*/
+body {
+    font-family: "Open Sans";
+}
+
 /*----------------Landing page styling--*/
 .landing-image {
-    background-color:aquamarine;
+    text-align: center;
+    height: 600px;
+    background-image: url("../images/sante_social_vmobile.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-text-align {
+    margin-top: 200px
+}
+
+.landing-text-align>h1 {
+    padding-bottom: 5px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.landing-button-align {
+    margin-top: 10px;
+}
+
+.how-div {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.how-div>h1 {
+    font-family: "Roboto";
+}
+
+/*-----------------Footer--*/
+
+.footer-item {
+    font-family: "Open Sans";
+    display: inline-block;
+    list-style: none;
+}
+
+.social-media {
+    font-family: "Open Sans";
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-list {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.social-media {
+    margin: 0px 5px;
+
 }
