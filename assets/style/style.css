@@ -28,13 +28,39 @@ body {
     margin-top: 10px;
 }
 
-.how-div {
-    height: 300px;
-    margin-top: 100px;
+.how-section{
+    height: 350px;
+    
+
 }
+
+.how-row-div {
+    height: 350px;
+}
+
+.how-div {
+   
+
+} 
 
 .how-div>h1 {
     font-family: "Roboto";
+
+}
+
+.help-line {
+    height: 100px;
+    background-color:#E2E9F3;
+
+}
+
+.help-line-row {
+    height: 100px;
+}
+
+.help-title {
+    font-family: "Roboto";
+    font-weight: 700;
 }
 
 /*-----------------Footer--*/
