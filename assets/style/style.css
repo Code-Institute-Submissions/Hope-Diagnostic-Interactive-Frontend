@@ -3,6 +3,7 @@
 /*----------------------General--*/
 body {
     font-family: "Open Sans";
+    height: 100%;
 }
 
 /*----------------Landing page styling--*/
@@ -29,13 +30,13 @@ body {
 }
 
 .how-section{
-    height: 350px;
+    height: 450px;
     
 
 }
 
 .how-row-div {
-    height: 350px;
+    height: 100%;
 }
 
 .how-div {
@@ -63,9 +64,24 @@ body {
     font-weight: 700;
 }
 
+/*-----------------Diagnostics--*/
+
+.input-match-list{
+    height: 50px;
+}
+.user-logged-symptoms {
+    height: 150px;
+    background-color: #f6f7f8;
+}
+.returned-diagnosis {
+    height: 150px;
+    background-color: #f6f7f8;
+}
+
+
 /*-----------------Footer--*/
 
-.footer-item {
+.footer-items {
     font-family: "Open Sans";
     display: inline-block;
     list-style: none;
@@ -86,3 +102,4 @@ body {
     margin: 0px 5px;
 
 }
+
