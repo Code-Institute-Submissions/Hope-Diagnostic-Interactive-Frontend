@@ -68,11 +68,11 @@
                         </div>
                         <div class="form-group">
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <input type="radio" id="customRadioInline1" value="male" name="customRadioInline1" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadioInline1">Male</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <input type="radio" id="customRadioInline2" value="female" name="customRadioInline1" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadioInline2">Female</label>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                             <div class="user-logged-symptoms col-10 col-md-4 mx-auto" id="userLoggedInput"></div>
                             <div class="returned-diagnosis col-10 col-md-4 mx-auto" id="returnedDiagnosis"></div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" onclick="getDiagnosis(event)" class="btn btn-primary">Submit</button>
                     </form>
                 </div>    
             </div> 

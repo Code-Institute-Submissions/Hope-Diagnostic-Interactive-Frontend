@@ -1,7 +1,8 @@
-var name = document.getElementById("")
-var yearOfBirth = document.getElementById("")
-var sex = document.getElementById("")
+//var name = document.getElementById("")
+var yearOfBirth = document.getElementById("yearOfBirthInput")
+var sex = document.getElementsByName("customRadioInline1")
 var symptomInput = document.getElementById("inputSymptoms")
+var diagnosisData;
 //var userLoggedSymptoms = []
 //var userLogged = document.getElementById("userLoggedInput");
 var tags = [];
@@ -116,4 +117,43 @@ symptomInput.addEventListener("keypress", function(e){
  //       })
 
 
+
+function getDiagnosis(event) {
+    var gender;
+        for(i = 0; i < sex.length; i++) {
+        if(sex[i].checked){
+            gender = sex[i].value;
+        
+        }
+        
+        }
+    console.log(yearOfBirth.value)
+    event.preventDefault();
+    var sympRequest = new XMLHttpRequest();
+    var token = localStorage.getItem("token");
+    //console.log(token)
+	sympRequest.open("GET", "https://sandbox-healthservice.priaid.ch/diagnosis?symptoms="+JSON.stringify(symptomsId)+"&gender="+gender+"&year_of_birth="+yearOfBirth.value+"&token="+token+"&format=json&language=en-gb");
+	sympRequest.send();
+
+	sympRequest.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+            //callb(JSON.parse(this.responseText));
+            
+            diagnosisData = JSON.parse(this.responseText);
+            //tags = symptomDataBase.map(x=>x.Name);
+            //console.log(tags)
+            console.log(diagnosisData)
+            showDiagnosis(diagnosisData)
+			//return symptomDataBase
+		}
+	};
+}
+
+function showDiagnosis(data){
+    for(i = 0; i < data.length; i++) {
+        $("#returnedDiagnosis").append("<span> Name: "+data[i].Issue.Name+"</span>");
+        $("#returnedDiagnosis").append("<span> Accuracy: "+data[i].Issue.Accuracy+"</p>");
+        $("#returnedDiagnosis").append("<span> ProfName: "+data[i].Issue.ProfName+"</p>");
+    }
+}
 
