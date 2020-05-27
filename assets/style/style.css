@@ -103,3 +103,9 @@ body {
 
 }
 
+.returned-diagnosis > p {
+    display: block;
+    margin-bottom: 0;
+    position: relative;
+}
+

@@ -151,9 +151,10 @@ function getDiagnosis(event) {
 
 function showDiagnosis(data){
     for(i = 0; i < data.length; i++) {
-        $("#returnedDiagnosis").append("<span> Name: "+data[i].Issue.Name+"</span>");
-        $("#returnedDiagnosis").append("<span> Accuracy: "+data[i].Issue.Accuracy+"</p>");
-        $("#returnedDiagnosis").append("<span> ProfName: "+data[i].Issue.ProfName+"</p>");
+        $("#returnedDiagnosis").append("<p> Name: "+data[i].Issue.Name+"</p>");
+        $("#returnedDiagnosis").append("<p> Accuracy: "+data[i].Issue.Accuracy+"</p>");
+        $("#returnedDiagnosis").append("<p> ProfName: "+data[i].Issue.ProfName+"</p>");
+        $("#returnedDiagnosis").append("<br>");
     }
 }
 
