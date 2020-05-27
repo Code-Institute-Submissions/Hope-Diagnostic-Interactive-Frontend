@@ -71,11 +71,25 @@ body {
 }
 .user-logged-symptoms {
     height: 150px;
+    margin: 10px 5px 10px 5px;
     background-color: #f6f7f8;
+    border: 1px solid #00a2e5;
+    border-radius: 2%;
+    overflow: auto;
 }
 .returned-diagnosis {
     height: 150px;
+    margin: 10px 5px 10px 5px;
     background-color: #f6f7f8;
+    border: 1px solid #00a2e5;
+    border-radius: 2%;
+    overflow: auto;
+}
+
+.returned-diagnosis > p {
+    display: block;
+    margin-bottom: 0;
+    position: left;
 }
 
 
@@ -103,9 +117,5 @@ body {
 
 }
 
-.returned-diagnosis > p {
-    display: block;
-    margin-bottom: 0;
-    position: relative;
-}
+
 

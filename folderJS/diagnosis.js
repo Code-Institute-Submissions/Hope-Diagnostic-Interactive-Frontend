@@ -86,7 +86,7 @@ symptomInput.addEventListener("keypress", function(e){
       e.preventDefault();
       
     var symptomInputValue = document.getElementById("inputSymptoms").value
-       
+      var spellCheck = false; 
       for (i = 0; i < symptomDataBase.length; i++) {
         if (symptomDataBase[i].Name.toLowerCase() === symptomInputValue.toLowerCase()) {
           //return symptomDataBase[i].Name && symptomsId.push(symptomDataBase[i].ID)
@@ -95,13 +95,17 @@ symptomInput.addEventListener("keypress", function(e){
         //userLoggedSymptoms.push(symptomDataBase[i].Name)
             $("#userLoggedInput").append("<p>"+symptomDataBase[i].Name+"</p>")
 
-        
+        spellCheck = true;
         //var userLoggedHTML = '';
         //for (var i = 0; i < userLoggedSymptoms.length; i++) {
         //userLoggedHTML += '<span class="test">' + userLoggedSymptoms[i] + '</span><br/><br/>';
         //}
         }
+
         
+    }
+    if (!spellCheck){
+        alert("Check your spellings and Enter correct symptom")
     }
 
 
@@ -153,8 +157,14 @@ function showDiagnosis(data){
     for(i = 0; i < data.length; i++) {
         $("#returnedDiagnosis").append("<p> Name: "+data[i].Issue.Name+"</p>");
         $("#returnedDiagnosis").append("<p> Accuracy: "+data[i].Issue.Accuracy+"</p>");
-        $("#returnedDiagnosis").append("<p> ProfName: "+data[i].Issue.ProfName+"</p>");
+        $("#returnedDiagnosis").append("<p> Professional Name: "+data[i].Issue.ProfName+"</p>");
         $("#returnedDiagnosis").append("<br>");
     }
+}
+
+function clearBoxes(event){
+    event.preventDefault()
+    $("#userLoggedInput").find('p').remove()
+    $("#returnedDiagnosis").find('p').remove()
 }
 
