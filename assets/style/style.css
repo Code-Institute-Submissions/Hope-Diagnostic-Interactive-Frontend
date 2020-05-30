@@ -4,7 +4,30 @@
 body {
     font-family: "Open Sans";
     height: 100%;
+    color: #0C3E5E;
 }
+
+/*--------------------------------------NAVIGATION----*/
+
+/*--#nav_styling {
+    background-color: #B2CEFF;
+    color: white;
+    z-index: 2;
+}    
+    .navbar-custom {
+    background-color: #ff5500;
+    } ---*/
+
+.bg-primary {
+    background-color: #155B87 !important;
+
+}
+
+.navbar-brand {
+    color: #292929;
+}
+
+ 
 
 /*----------------Landing page styling--*/
 .landing-image {
@@ -30,9 +53,7 @@ body {
 }
 
 .how-section{
-    height: 450px;
-    
-
+    background-color: #FBFBFD
 }
 
 .how-row-div {
@@ -50,13 +71,65 @@ body {
 }
 
 .help-line {
-    height: 100px;
     background-color:#E2E9F3;
 
 }
+/*-------------------------------------------------DOCTORS-SECTION----*/
+.doctors-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.doctors-div {
+    position:relative;
+    display: inline;
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
+}
+
+.doctors-div > h5 {
+    color: #2ED1B5;
+}
+
+.doctors-div > p {
+    font-family: "Roboto";
+}
+
+.general-doctor{
+    background-image: url(../images/doctor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.cardio-doctor {
+    background-image: url(../images/Screen_Shot_2016-02-04_at_6.52.32_PM_t750x550.png);
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.psych-doctor {
+    background-image: url(../images/national-doctors-day.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50%;
+}
 
 .help-line-row {
-    height: 100px;
+    
 }
 
 .help-title {
@@ -67,10 +140,10 @@ body {
 /*-----------------Diagnostics--*/
 
 .input-match-list{
-    height: 50px;
+    height: 80px;
 }
 .user-logged-symptoms {
-    height: 150px;
+    height: 300px;
     margin: 10px 5px 10px 5px;
     background-color: #f6f7f8;
     border: 1px solid #00a2e5;
@@ -78,8 +151,9 @@ body {
     overflow: auto;
 }
 .returned-diagnosis {
-    height: 150px;
+    height: 300px;
     margin: 10px 5px 10px 5px;
+    text-align: left;
     background-color: #f6f7f8;
     border: 1px solid #00a2e5;
     border-radius: 2%;
@@ -94,11 +168,16 @@ body {
 
 
 /*-----------------Footer--*/
+.footer-style {
+    background-color: #0C3E5E;
+    padding-top: 20px;
+}
 
 .footer-items {
     font-family: "Open Sans";
     display: inline-block;
     list-style: none;
+
 }
 
 .social-media {
@@ -110,10 +189,13 @@ body {
 .footer-list {
     display: inline-block;
     margin: 5px 10px;
+    color: #fff;
 }
 
 .social-media {
     margin: 0px 5px;
+    color: #fff;
+    padding-bottom: 20px
 
 }
 
