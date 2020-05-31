@@ -2,12 +2,21 @@
 
 /*----------------------General--*/
 body {
-    font-family: "Open Sans";
+    font-family: "Roboto";
     height: 100%;
     color: #0C3E5E;
 }
 
+h1 h2 h3 {
+    font-family: "Open Sans"
+}
+
 /*--------------------------------------NAVIGATION----*/
+
+.navbar {
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
+}
 
 /*--#nav_styling {
     background-color: #B2CEFF;
@@ -33,9 +42,11 @@ body {
 .landing-image {
     text-align: center;
     height: 600px;
-    background-image: url("../images/sante_social_vmobile.png");
+    background-image: url("../images/medical-translations-1920x860.jpg");
     background-size: cover;
     background-position: center;
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
 }
 
 .landing-text-align {
@@ -53,14 +64,16 @@ body {
 }
 
 .how-section{
-    background-color: #FBFBFD
+    background-color: #F0FBFE;
 }
 
 .how-row-div {
     height: 100%;
 }
 
-.how-div {
+.how-it-works {
+    background-color: #F0FBFE;
+}
    
 
 } 
@@ -71,7 +84,7 @@ body {
 }
 
 .help-line {
-    background-color:#E2E9F3;
+    background-color:#F0FBFE;
 
 }
 /*-------------------------------------------------DOCTORS-SECTION----*/
@@ -139,17 +152,50 @@ body {
 
 /*-----------------Diagnostics--*/
 
+.landing-image-diagnosis {
+    text-align: center;
+    background-image: url("../images/sante_social_vmobile.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
+}
+
+.diagnosis-image-text-align {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.how-it-works {
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
+}
+
+.landing-text-align>h1 {
+    padding-bottom: 5px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
 .input-match-list{
     height: 80px;
 }
 .user-logged-symptoms {
     height: 300px;
     margin: 10px 5px 10px 5px;
+    text-align: left;
     background-color: #f6f7f8;
     border: 1px solid #00a2e5;
     border-radius: 2%;
     overflow: auto;
 }
+
+.user-logged-symptoms > h6 {
+   text-align: center;
+   background-color: #70d6ff;
+}
+
+
 .returned-diagnosis {
     height: 300px;
     margin: 10px 5px 10px 5px;
@@ -160,10 +206,9 @@ body {
     overflow: auto;
 }
 
-.returned-diagnosis > p {
-    display: block;
-    margin-bottom: 0;
-    position: left;
+.returned-diagnosis > h6 {
+    text-align: center;
+    background-color: #70d6ff;
 }
 
 
