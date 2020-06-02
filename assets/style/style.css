@@ -76,6 +76,8 @@ h1 h2 h3 {
 
 .how-section{
     background-color: #F0FBFE;
+    z-index: 1020;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.1)!important;
 }
 
 .how-row-div {
@@ -127,7 +129,7 @@ h1 h2 h3 {
     height: 180px;
     width: 180px;
     list-style: none;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     border-radius: 50%;
 }
 
@@ -170,7 +172,7 @@ h1 h2 h3 {
     background-size: cover;
     background-position: center;
     z-index: 1020;
-    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.2)!important;
+    box-shadow: 0 .5rem .5rem -.5rem rgba(0,0,0,.1)!important;
 }
 
 .diagnosis-image-text-align {
@@ -206,6 +208,10 @@ h1 h2 h3 {
     overflow: auto;
 }
 
+.user-logged-symptoms > p {
+    margin-bottom: 0px;
+}
+
 .user-logged-symptoms > h6 {
    text-align: center;
    background-color: #70d6ff;
@@ -220,6 +226,10 @@ h1 h2 h3 {
     border: 1px solid #00a2e5;
     border-radius: 2%;
     overflow: auto;
+}
+
+.returned-diagnosis > p {
+    margin-bottom: 0px;
 }
 
 .returned-diagnosis > h6 {
